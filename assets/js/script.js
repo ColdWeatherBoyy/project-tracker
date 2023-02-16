@@ -1,6 +1,14 @@
 // DOM Dependencies
   // Header
     // Real Time (dayjs)
+// Get the date element
+const dateElement = document.getElementById('date');
+
+// Update the date every second
+setInterval(() => {
+  const date = dayjs().format('MMM DD, YYYY [at] hh:mm:ss A');
+  dateElement.textContent = date;
+}, 1000);
 
   // Card
     // Bootstrap Card w/ instructions
