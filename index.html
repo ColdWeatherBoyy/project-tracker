@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  </head>
 
-<body>
-  
-</body>
-
+  <body>
+    
+        <!-- //containing the instructions for card -->
+        <div class="col-4">
+          <div class="card custom-card">
+            <div class="card-header">
+              <h3 class="card-title">Instructions</h3>
+            </div>
+            <div class="card-body d-flex flex-column p-0">
+              <p class="card-text m-3">
+                Click the button below to open a form and provide information
+                for the following
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Project Name</li>
+                <li class="list-group-item">Project Type</li>
+                <li class="list-group-item">Due Date</li>
+              </ul>
+              </div>
+                    <div class="card-footer text-center">
+                        <button class="btn btn-block custom-btn" 
+                                id="btnAddProject"
+                                data-toggle="modal" 
+                                data-target="#staticBackdrop">
+                                Add Project
+                        </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
